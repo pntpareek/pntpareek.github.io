@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puneet Pareek | Academic Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --accent: #2563eb;
+            --text: #1f2937;
+            --muted: #4b5563;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .affiliation {
+            font-size: 1.1rem;
+            color: var(--muted);
+            margin-bottom: 1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+        }
+
+        .contact-links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            color: var(--primary);
+            margin-bottom: 1.25rem;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.4rem;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background-color: #eff6ff;
+            color: var(--accent);
+            padding: 0.35rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border: 1px solid #dbeafe;
+        }
+
+        .timeline-item {
+            margin-bottom: 1.25rem;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        .timeline-sub {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .publication-item {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--accent);
+        }
+
+        .publication-title {
+            font-weight: 600;
+        }
+
+        .publication-authors {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .publication-venue {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+
+        ul.skills-list {
+            list-style-type: disc;
+            padding-left: 1.25rem;
+            color: var(--muted);
+        }
+
+        ul.skills-list li {
+            margin-bottom: 0.35rem;
+        }
+
+        strong.skill-category {
+            color: var(--text);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Puneet Pareek</h1>
+            <div class="affiliation">
+                Tata Institute of Fundamental Research (TIFR), Hyderabad
+            </div>
+            <div class="contact-links">
+                <span>📧 <a href="mailto:ppareek@tifrh.res.in">ppareek@tifrh.res.in</a></span>
+                <span>📍 Hyderabad, India</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Research Interests</h2>
+            <div class="tag-container">
+                <span class="tag">Glassy Dynamics</span>
+                <span class="tag">Disordered Systems</span>
+                <span class="tag">Active Matter</span>
+                <span class="tag">Non-equilibrium Statistical Mechanics</span>
+                <span class="tag">Biophysics</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Research Overview</h2>
+            <div class="timeline-item">
+                <div class="timeline-title">Passive Glassy Dynamics & Timescales</div>
+                <p class="timeline-sub">
+                    Demonstrated that caging controls the mean whereas dynamical heterogeneity (DH) governs the distribution of particle displacements. Analyzed non-Gaussian distributions, overlap functions, and Fickian yet non-Gaussian characteristics.
+                </p>
+            </div>
+            <div class="timeline-item" style="margin-top: 1rem;">
+                <div class="timeline-title">Relaxation Dynamics in Kinetically Constrained Models</div>
+                <p class="timeline-sub">
+                    Investigated the crossover in overlap functions from stretched exponential at short times to power-law at long times in spin models governed by energy conservation and domain wall excitations.
+                </p>
+            </div>
+            <div class="timeline-item" style="margin-top: 1rem;">
+                <div class="timeline-title">Active Glasses & Tunable Fragility</div>
+                <p class="timeline-sub">
+                    Studied dense assemblies of active particles exhibiting reentrance and tunable fragility (sub-Arrhenius to super-Arrhenius), characterizing the critical glass-liquid surface and active glass lines.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Publications & Preprints</h2>
+            
+            <div class="publication-item">
+                <div class="publication-title">Scaling the glassy dynamics of active particles: Tunable fragility and reentrance</div>
+                <div class="publication-authors">Puneet Pareek, Peter Sollich, Saroj Kumar Nandi, Ludovic Berthier</div>
+                <div class="publication-venue">Proc. Natl. Acad. Sci. U.S.A. 123 (4) e2516624123 (2025)</div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">Stretched exponential to power-law: crossover of relaxation in a kinetically constrained model</div>
+                <div class="publication-authors">Sukanta Mukherjee, Puneet Pareek, Mustansir Barma, Saroj Kumar Nandi</div>
+                <div class="publication-venue">J. Stat. Mech. (2024) 023205</div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">Different glassy characteristics are related to either caging or dynamical heterogeneity</div>
+                <div class="publication-authors">Puneet Pareek, Monoj Adhikari, Chandan Dasgupta, Saroj Kumar Nandi</div>
+                <div class="publication-venue">J. Chem. Phys. 159, 174503 (2023)</div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-title">Active Inhomogeneous Mode-Coupling Theory (aIMCT) for Dense Systems of Self-Propelled Particles</div>
+                <div class="publication-authors">Soumitra Kolya, Puneet Pareek, Saroj Kumar Nandi</div>
+                <div class="publication-venue">Preprint arXiv:2410.15928 (2024)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education & Experience</h2>
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">Postdoctoral Fellow / Research Associate</span>
+                    <span class="timeline-date">Oct 2025 – Sep 2026</span>
+                </div>
+                <div class="timeline-sub">Tata Institute of Fundamental Research (TIFR), Hyderabad</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">Ph.D. in Physics</span>
+                    <span class="timeline-date">2020 – 2026</span>
+                </div>
+                <div class="timeline-sub">Tata Institute of Fundamental Research (TIFR), Hyderabad / Mumbai</div>
+                <div class="timeline-sub"><em>Thesis:</em> Characteristics of glassy dynamics and how active self-propelled forces affect them (Advisor: Prof. Saroj Kumar Nandi)</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">M.Sc. in Physics</span>
+                    <span class="timeline-date">2018 – 2020</span>
+                </div>
+                <div class="timeline-sub">Indian Institute of Technology Delhi (IIT-D) | CGPA: 9.507 / 10</div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-header">
+                    <span class="timeline-title">B.Sc. (Hons) Physics</span>
+                    <span class="timeline-date">2015 – 2018</span>
+                </div>
+                <div class="timeline-sub">University of Delhi | CGPA: 9.203 / 10</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical & Computational Skills</h2>
+            <ul class="skills-list">
+                <li><strong class="skill-category">Programming:</strong> Python, C, C++</li>
+                <li><strong class="skill-category">Scientific Software:</strong> LAMMPS, OVITO, Mathematica, GNUplot, LaTeX</li>
+                <li><strong class="skill-category">Environments:</strong> Linux, Windows</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>© Puneet Pareek · Hosted on GitHub Pages</p>
+        </footer>
+    </div>
+
+</body>
+</html>
