@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puneet Pareek | Homepage</title>
+    <title>Dr. Puneet Pareek | Physicist & Researcher</title>
     <!-- Google Fonts & Font Awesome Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -210,6 +210,59 @@
             border-color: var(--brand-primary);
         }
 
+        /* Timeline Items */
+        .timeline-box {
+            position: relative;
+            padding-left: 1.5rem;
+            border-left: 2px solid #e2e8f0;
+            margin-left: 0.5rem;
+        }
+
+        .timeline-entry {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-entry::before {
+            content: "";
+            position: absolute;
+            left: calc(-1.5rem - 5px);
+            top: 6px;
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border: 2px solid var(--brand-accent);
+            border-radius: 50%;
+        }
+
+        .timeline-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .timeline-role {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+        .timeline-period {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .timeline-place {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
         /* Overview Grid */
         .grid-cards {
             display: grid;
@@ -299,59 +352,6 @@
             font-size: 0.8rem;
             color: var(--text-muted);
             font-weight: 500;
-        }
-
-        /* Timeline Items */
-        .timeline-box {
-            position: relative;
-            padding-left: 1.5rem;
-            border-left: 2px solid #e2e8f0;
-            margin-left: 0.5rem;
-        }
-
-        .timeline-entry {
-            position: relative;
-            margin-bottom: 1.5rem;
-        }
-
-        .timeline-entry:last-child {
-            margin-bottom: 0;
-        }
-
-        .timeline-entry::before {
-            content: "";
-            position: absolute;
-            left: calc(-1.5rem - 5px);
-            top: 6px;
-            width: 8px;
-            height: 8px;
-            background: #fff;
-            border: 2px solid var(--brand-accent);
-            border-radius: 50%;
-        }
-
-        .timeline-title-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-        }
-
-        .timeline-role {
-            font-weight: 700;
-            font-size: 0.95rem;
-            color: var(--text-main);
-        }
-
-        .timeline-period {
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: var(--text-muted);
-        }
-
-        .timeline-place {
-            font-size: 0.875rem;
-            color: var(--text-secondary);
         }
 
         /* Grid Lists for Awards & Achievements */
@@ -514,7 +514,7 @@
             </div>
         </header>
 
-        <!-- Research Interests -->
+        <!-- Research Domains -->
         <section>
             <div class="section-header">
                 <div class="section-icon"><i class="fa-solid fa-atom"></i></div>
@@ -526,6 +526,44 @@
                 <span class="tag-chip">Active Matter</span>
                 <span class="tag-chip">Non-equilibrium Statistical Mechanics</span>
                 <span class="tag-chip">Biophysics</span>
+            </div>
+        </section>
+
+        <!-- Academic Journey -->
+        <section>
+            <div class="section-header">
+                <div class="section-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h2>Academic Journey</h2>
+            </div>
+            <div class="timeline-box">
+                <div class="timeline-entry">
+                    <div class="timeline-title-row">
+                        <span class="timeline-role">Postdoctoral Fellow / Research Associate</span>
+                        <span class="timeline-period">Oct 2025 – Sep 2026</span>
+                    </div>
+                    <div class="timeline-place">Tata Institute of Fundamental Research (TIFR), Hyderabad</div>
+                </div>
+                <div class="timeline-entry">
+                    <div class="timeline-title-row">
+                        <span class="timeline-role">Ph.D. in Physics</span>
+                        <span class="timeline-period">2020 – 2026</span>
+                    </div>
+                    <div class="timeline-place">Tata Institute of Fundamental Research (TIFR), Hyderabad / Mumbai</div>
+                </div>
+                <div class="timeline-entry">
+                    <div class="timeline-title-row">
+                        <span class="timeline-role">M.Sc. in Physics</span>
+                        <span class="timeline-period">2018 – 2020</span>
+                    </div>
+                    <div class="timeline-place">Indian Institute of Technology Delhi (IIT-D) • CGPA 9.507 / 10</div>
+                </div>
+                <div class="timeline-entry">
+                    <div class="timeline-title-row">
+                        <span class="timeline-role">B.Sc. (Hons) in Physics</span>
+                        <span class="timeline-period">2015 – 2018</span>
+                    </div>
+                    <div class="timeline-place">University of Delhi • CGPA 9.203 / 10</div>
+                </div>
             </div>
         </section>
 
@@ -673,44 +711,6 @@
                     <div class="award-text">
                         <strong>Science Meritorious Award</strong> — University of Delhi.
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education & Academic Journey -->
-        <section>
-            <div class="section-header">
-                <div class="section-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                <h2>Academic Journey</h2>
-            </div>
-            <div class="timeline-box">
-                <div class="timeline-entry">
-                    <div class="timeline-title-row">
-                        <span class="timeline-role">Postdoctoral Fellow / Research Associate</span>
-                        <span class="timeline-period">Oct 2025 – Sep 2026</span>
-                    </div>
-                    <div class="timeline-place">Tata Institute of Fundamental Research (TIFR), Hyderabad</div>
-                </div>
-                <div class="timeline-entry">
-                    <div class="timeline-title-row">
-                        <span class="timeline-role">Ph.D. in Physics</span>
-                        <span class="timeline-period">2020 – 2026</span>
-                    </div>
-                    <div class="timeline-place">Tata Institute of Fundamental Research (TIFR), Hyderabad / Mumbai</div>
-                </div>
-                <div class="timeline-entry">
-                    <div class="timeline-title-row">
-                        <span class="timeline-role">M.Sc. in Physics</span>
-                        <span class="timeline-period">2018 – 2020</span>
-                    </div>
-                    <div class="timeline-place">Indian Institute of Technology Delhi (IIT-D) • CGPA 9.507 / 10</div>
-                </div>
-                <div class="timeline-entry">
-                    <div class="timeline-title-row">
-                        <span class="timeline-role">B.Sc. (Hons) in Physics</span>
-                        <span class="timeline-period">2015 – 2018</span>
-                    </div>
-                    <div class="timeline-place">University of Delhi • CGPA 9.203 / 10</div>
                 </div>
             </div>
         </section>
