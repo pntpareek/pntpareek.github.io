@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puneet Pareek | Homepage</title>
-    <!-- Fonts & MathJax -->
+    <title>Dr. Puneet Pareek | Physicist & Researcher</title>
+    <!-- Google Fonts & Font Awesome Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
     <style>
         :root {
-            --primary: #1e3a8a;
-            --accent: #2563eb;
-            --text: #1f2937;
-            --muted: #4b5563;
-            --bg: #f8fafc;
+            --brand-primary: #1e3a8a;
+            --brand-accent: #2563eb;
+            --brand-gradient: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            --text-main: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --bg-page: #f8fafc;
             --card-bg: #ffffff;
-            --border: #e2e8f0;
+            --border-color: #e2e8f0;
+            --badge-bg: #eff6ff;
+            --badge-text: #1d4ed8;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+            --shadow-md: 0 8px 20px -4px rgba(15, 23, 42, 0.08);
+            --shadow-hover: 0 14px 28px -6px rgba(30, 58, 138, 0.12);
         }
 
         * {
@@ -28,202 +37,374 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
         }
 
         .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 2.5rem 1.5rem;
+            max-width: 960px;
+            margin: 2.5rem auto;
+            padding: 0 1.25rem;
         }
 
-        header {
-            background-color: var(--card-bg);
-            border-radius: 14px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-            border: 1px solid var(--border);
+        /* Profile Header Hero */
+        .profile-hero {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 2.75rem;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-md);
             display: flex;
             align-items: center;
             gap: 2.5rem;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 2rem;
         }
 
-        .profile-img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: top center;
-            border: 3px solid #dbeafe;
-            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.12);
+        .profile-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--brand-gradient);
+        }
+
+        .img-wrapper {
+            position: relative;
             flex-shrink: 0;
         }
 
-        .header-content {
-            flex: 1;
+        .profile-img {
+            width: 155px;
+            height: 155px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top center;
+            border: 4px solid #fff;
+            box-shadow: 0 0 0 3px var(--border-color), 0 8px 20px rgba(0, 0, 0, 0.12);
         }
 
-        h1 {
+        .hero-details h1 {
             font-size: 2.25rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.35rem;
-        }
-
-        .affiliation {
-            font-size: 1.05rem;
-            color: var(--muted);
-            margin-bottom: 1rem;
-        }
-
-        .contact-links {
-            display: flex;
-            gap: 1.25rem;
-            flex-wrap: wrap;
-            font-size: 0.95rem;
-        }
-
-        .contact-links a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .contact-links a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            background-color: var(--card-bg);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-            border: 1px solid var(--border);
-        }
-
-        h2 {
-            font-size: 1.35rem;
-            color: var(--primary);
-            margin-bottom: 1.25rem;
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 0.4rem;
-        }
-
-        .tag-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .tag {
-            background-color: #eff6ff;
-            color: var(--accent);
-            padding: 0.35rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            font-weight: 500;
-            border: 1px solid #dbeafe;
-        }
-
-        .timeline-item {
-            margin-bottom: 1.25rem;
-        }
-
-        .timeline-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .timeline-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: var(--text-main);
             margin-bottom: 0.25rem;
         }
 
-        .timeline-title {
+        .hero-role {
+            font-size: 1.05rem;
             font-weight: 600;
-            color: var(--text);
-        }
-
-        .timeline-date {
-            font-size: 0.85rem;
-            color: var(--muted);
-            font-weight: 500;
-        }
-
-        .timeline-sub {
-            color: var(--muted);
-            font-size: 0.95rem;
-        }
-
-        .publication-item {
-            margin-bottom: 1.25rem;
-            padding-left: 1rem;
-            border-left: 3px solid var(--accent);
-        }
-
-        .publication-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .publication-title a {
-            font-weight: 600;
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        .publication-title a:hover {
-            text-decoration: underline;
-        }
-
-        .publication-authors {
-            color: var(--muted);
-            font-size: 0.95rem;
-        }
-
-        .publication-venue {
-            font-style: italic;
-            font-size: 0.9rem;
-            color: var(--text);
-        }
-
-        ul.skills-list {
-            list-style-type: disc;
-            padding-left: 1.25rem;
-            color: var(--muted);
-        }
-
-        ul.skills-list li {
+            color: var(--brand-accent);
             margin-bottom: 0.35rem;
         }
 
-        strong.skill-category {
-            color: var(--text);
+        .hero-affiliation {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.65rem;
+        }
+
+        .btn-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.5rem 1rem;
+            background: #f1f5f9;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-pill:hover {
+            background: var(--brand-primary);
+            color: #fff;
+            border-color: var(--brand-primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(30, 58, 138, 0.15);
+        }
+
+        /* Section Cards */
+        section {
+            background: var(--card-bg);
+            border-radius: 18px;
+            padding: 2.25rem;
+            margin-bottom: 1.75rem;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow 0.2s ease;
+        }
+
+        section:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-icon {
+            width: 34px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eff6ff;
+            color: var(--brand-accent);
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: -0.01em;
+        }
+
+        /* Research Topic Tags */
+        .tags-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+
+        .tag-chip {
+            background: #f8fafc;
+            color: #334155;
+            padding: 0.45rem 0.9rem;
+            border-radius: 10px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border: 1px solid #cbd5e1;
+            transition: all 0.2s;
+        }
+
+        .tag-chip:hover {
+            background: var(--brand-primary);
+            color: #fff;
+            border-color: var(--brand-primary);
+        }
+
+        /* Overview Grid */
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .focus-box {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            border-left: 4px solid var(--brand-accent);
+        }
+
+        .focus-box h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.4rem;
+        }
+
+        .focus-box p {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.55;
+        }
+
+        /* Publication Cards */
+        .pub-card {
+            padding: 1.25rem 0;
+            border-bottom: 1px dashed var(--border-color);
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .pub-card:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .pub-card:first-child {
+            padding-top: 0;
+        }
+
+        .pub-meta-top {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .badge {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0.2rem 0.55rem;
+            border-radius: 6px;
+            letter-spacing: 0.04em;
+        }
+
+        .badge-journal { background: #dcfce7; color: #15803d; }
+        .badge-preprint { background: #fef3c7; color: #b45309; }
+        .badge-thesis { background: #f3e8ff; color: #7e22ce; }
+
+        .pub-title a {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--brand-primary);
+            text-decoration: none;
+            line-height: 1.4;
+        }
+
+        .pub-title a:hover {
+            color: var(--brand-accent);
+            text-decoration: underline;
+        }
+
+        .pub-authors {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .pub-journal {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        /* Timeline Items */
+        .timeline-box {
+            position: relative;
+            padding-left: 1.5rem;
+            border-left: 2px solid #e2e8f0;
+            margin-left: 0.5rem;
+        }
+
+        .timeline-entry {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-entry::before {
+            content: "";
+            position: absolute;
+            left: calc(-1.5rem - 5px);
+            top: 6px;
+            width: 8px;
+            height: 8px;
+            background: #fff;
+            border: 2px solid var(--brand-accent);
+            border-radius: 50%;
+        }
+
+        .timeline-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .timeline-role {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+        .timeline-period {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .timeline-place {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        /* Skills Pill Layout */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .skill-group h4 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .skill-chips span {
+            font-family: 'JetBrains Mono', monospace;
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: var(--text-main);
         }
 
         footer {
             text-align: center;
             padding: 2rem 0;
-            color: var(--muted);
+            color: var(--text-muted);
             font-size: 0.85rem;
         }
 
-        @media (max-width: 640px) {
-            header {
+        /* Mobile Optimization */
+        @media (max-width: 680px) {
+            .profile-hero {
                 flex-direction: column;
                 text-align: center;
+                padding: 2rem 1.5rem;
                 gap: 1.5rem;
             }
-            .contact-links {
+            .hero-affiliation {
                 justify-content: center;
             }
-            .timeline-header {
-                flex-direction: column;
+            .action-buttons {
+                justify-content: center;
             }
         }
     </style>
@@ -231,155 +412,219 @@
 <body>
 
     <div class="container">
-        <!-- Header / Bio Card -->
-        <header>
-            <img src="personal_image.jpg" alt="Puneet Pareek" class="profile-img">
-            <div class="header-content">
+        
+        <!-- Hero Header -->
+        <header class="profile-hero">
+            <div class="img-wrapper">
+                <img src="personal_image.jpg" alt="Dr. Puneet Pareek" class="profile-img">
+            </div>
+            <div class="hero-details">
                 <h1>Puneet Pareek</h1>
-                <div class="affiliation">
+                <div class="hero-role">Postdoctoral Fellow / Researcher in Physics</div>
+                <div class="hero-affiliation">
+                    <i class="fa-solid fa-location-dot" style="color: var(--brand-accent);"></i>
                     Tata Institute of Fundamental Research (TIFR), Hyderabad
                 </div>
-                <div class="contact-links">
-                    <span>📧 <a href="mailto:ppareek@tifrh.res.in">ppareek@tifrh.res.in</a></span>
-                    <span>📍 Hyderabad, India</span>
-                    <span>📚 <a href="https://scholar.google.com/citations?user=HYVXb2kAAAAJ&hl=en" target="_blank">Google Scholar</a></span>
-                    <span>🔗 <a href="https://www.researchgate.net/profile/Puneet-Pareek-2" target="_blank">ResearchGate</a></span>
+                
+                <div class="action-buttons">
+                    <a href="mailto:ppareek@tifrh.res.in" class="btn-pill">
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=HYVXb2kAAAAJ&hl=en" target="_blank" class="btn-pill">
+                        <i class="fa-brands fa-google-scholar"></i> Google Scholar
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Puneet-Pareek-2" target="_blank" class="btn-pill">
+                        <i class="fa-brands fa-researchgate"></i> ResearchGate
+                    </a>
+                    <a href="cv.pdf" target="_blank" class="btn-pill">
+                        <i class="fa-solid fa-file-pdf"></i> CV
+                    </a>
                 </div>
             </div>
         </header>
 
         <!-- Research Interests -->
         <section>
-            <h2>Research Interests</h2>
-            <div class="tag-container">
-                <span class="tag">Glassy Dynamics</span>
-                <span class="tag">Disordered Systems</span>
-                <span class="tag">Active Matter</span>
-                <span class="tag">Non-equilibrium Statistical Mechanics</span>
-                <span class="tag">Biophysics</span>
+            <div class="section-header">
+                <div class="section-icon"><i class="fa-solid fa-atom"></i></div>
+                <h2>Research Domains</h2>
+            </div>
+            <div class="tags-wrapper">
+                <span class="tag-chip">Glassy Dynamics</span>
+                <span class="tag-chip">Disordered Systems</span>
+                <span class="tag-chip">Active Matter</span>
+                <span class="tag-chip">Non-equilibrium Statistical Mechanics</span>
+                <span class="tag-chip">Biophysics</span>
             </div>
         </section>
 
-        <!-- Past Research Overview -->
+        <!-- Research Highlights -->
         <section>
-            <h2>Research Overview</h2>
-            <div class="timeline-item">
-                <div class="timeline-title">Passive Glassy Dynamics & Timescales</div>
-                <p class="timeline-sub">
-                    Demonstrated that caging controls the mean whereas dynamical heterogeneity (DH) governs the distribution of particle displacements. Analyzed non-Gaussian distributions, overlap functions, and Fickian yet non-Gaussian characteristics.
-                </p>
+            <div class="section-header">
+                <div class="section-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <h2>Research Highlights</h2>
             </div>
-            <div class="timeline-item" style="margin-top: 1rem;">
-                <div class="timeline-title">Relaxation Dynamics in Kinetically Constrained Models</div>
-                <p class="timeline-sub">
-                    Investigated the crossover in overlap functions from stretched exponential at short times to power-law at long times in spin models governed by energy conservation and domain wall excitations.
-                </p>
-            </div>
-            <div class="timeline-item" style="margin-top: 1rem;">
-                <div class="timeline-title">Active Glasses & Tunable Fragility</div>
-                <p class="timeline-sub">
-                    Studied dense assemblies of active particles exhibiting reentrance and tunable fragility (sub-Arrhenius to super-Arrhenius), characterizing the critical glass-liquid surface and active glass lines.
-                </p>
+            <div class="grid-cards">
+                <div class="focus-box">
+                    <h3>Passive Glassy Dynamics & Timescales</h3>
+                    <p>Demonstrated that caging controls the mean whereas dynamical heterogeneity (DH) governs the displacement distributions, explaining Fickian yet non-Gaussian behaviour.</p>
+                </div>
+                <div class="focus-box">
+                    <h3>Kinetically Constrained Models</h3>
+                    <p>Revealed the mechanisms driving crossovers from stretched exponential to power-law decay in conserved energy 1D spin models via domain wall excitations.</p>
+                </div>
+                <div class="focus-box">
+                    <h3>Active Glasses & Fragility</h3>
+                    <p>Characterized the morphology of critical glass-liquid surfaces, revealing mechanisms behind reentrance and tunable fragility in biological and soft assemblies.</p>
+                </div>
             </div>
         </section>
 
-<!-- Publications -->
+        <!-- Publications -->
         <section>
-            <h2>Publications & Preprints</h2>
-            
+            <div class="section-header">
+                <div class="section-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                <h2>Publications & Manuscripts</h2>
+            </div>
+
             <!-- PhD Thesis -->
-            <div class="publication-item">
-                <div class="publication-title">
+            <div class="pub-card">
+                <div class="pub-meta-top">
+                    <span class="badge badge-thesis">Ph.D. Thesis</span>
+                    <span class="pub-journal">TIFR (2026)</span>
+                </div>
+                <div class="pub-title">
                     <a href="http://hdl.handle.net/10603/735277" target="_blank">Characteristics of glassy dynamics and how active self-propelled forces affect them</a>
                 </div>
-                <div class="publication-authors">Puneet Pareek (Advisor: Prof. Saroj Kumar Nandi)</div>
-                <div class="publication-venue">Ph.D. Thesis, Tata Institute of Fundamental Research (2026)</div>
+                <div class="pub-authors">Puneet Pareek (Advisor: Prof. Saroj Kumar Nandi)</div>
             </div>
 
-            <!-- Published Papers -->
-            <div class="publication-item">
-                <div class="publication-title">
+            <!-- Paper 1 -->
+            <div class="pub-card">
+                <div class="pub-meta-top">
+                    <span class="badge badge-journal">PNAS</span>
+                    <span class="pub-journal">Proc. Natl. Acad. Sci. U.S.A. 123 (4) e2516624123 (2025)</span>
+                </div>
+                <div class="pub-title">
                     <a href="https://doi.org/10.1073/pnas.2516624123" target="_blank">Scaling the glassy dynamics of active particles: Tunable fragility and reentrance</a>
                 </div>
-                <div class="publication-authors">Puneet Pareek, Peter Sollich, Saroj Kumar Nandi, Ludovic Berthier</div>
-                <div class="publication-venue">Proc. Natl. Acad. Sci. U.S.A. 123 (4) e2516624123 (2025)</div>
+                <div class="pub-authors">Puneet Pareek, Peter Sollich, Saroj Kumar Nandi, Ludovic Berthier</div>
             </div>
 
-            <div class="publication-item">
-                <div class="publication-title">
+            <!-- Paper 2 -->
+            <div class="pub-card">
+                <div class="pub-meta-top">
+                    <span class="badge badge-journal">J. Stat. Mech.</span>
+                    <span class="pub-journal">J. Stat. Mech. (2024) 023205</span>
+                </div>
+                <div class="pub-title">
                     <a href="https://doi.org/10.1088/1742-5468/ad1f55" target="_blank">Stretched exponential to power-law: crossover of relaxation in a kinetically constrained model</a>
                 </div>
-                <div class="publication-authors">Sukanta Mukherjee, Puneet Pareek, Mustansir Barma, Saroj Kumar Nandi</div>
-                <div class="publication-venue">J. Stat. Mech. (2024) 023205</div>
+                <div class="pub-authors">Sukanta Mukherjee, Puneet Pareek, Mustansir Barma, Saroj Kumar Nandi</div>
             </div>
 
-            <div class="publication-item">
-                <div class="publication-title">
-                    <a href=" https://doi.org/10.1063/5.0166404" target="_blank">Different glassy characteristics are related to either caging or dynamical heterogeneity</a>
+            <!-- Paper 3 -->
+            <div class="pub-card">
+                <div class="pub-meta-top">
+                    <span class="badge badge-journal">JCP</span>
+                    <span class="pub-journal">J. Chem. Phys. 159, 174503 (2023)</span>
                 </div>
-                <div class="publication-authors">Puneet Pareek, Monoj Adhikari, Chandan Dasgupta, Saroj Kumar Nandi</div>
-                <div class="publication-venue">J. Chem. Phys. 159, 174503 (2023)</div>
+                <div class="pub-title">
+                    <a href="https://doi.org/10.1063/5.0166404" target="_blank">Different glassy characteristics are related to either caging or dynamical heterogeneity</a>
+                </div>
+                <div class="pub-authors">Puneet Pareek, Monoj Adhikari, Chandan Dasgupta, Saroj Kumar Nandi</div>
             </div>
 
-            <div class="publication-item">
-                <div class="publication-title">
+            <!-- Preprint -->
+            <div class="pub-card">
+                <div class="pub-meta-top">
+                    <span class="badge badge-preprint">Preprint</span>
+                    <span class="pub-journal">arXiv:2410.15928 (2024)</span>
+                </div>
+                <div class="pub-title">
                     <a href="https://arxiv.org/abs/2410.15928" target="_blank">Active Inhomogeneous Mode-Coupling Theory (aIMCT) for Dense Systems of Self-Propelled Particles</a>
                 </div>
-                <div class="publication-authors">Soumitra Kolya, Puneet Pareek, Saroj Kumar Nandi</div>
-                <div class="publication-venue">Preprint arXiv:2410.15928 (2024)</div>
+                <div class="pub-authors">Soumitra Kolya, Puneet Pareek, Saroj Kumar Nandi</div>
             </div>
         </section>
 
-        <!-- Education & Experience -->
+        <!-- Education & Academic Journey -->
         <section>
-            <h2>Education & Experience</h2>
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <span class="timeline-title">Postdoctoral Fellow / Research Associate</span>
-                    <span class="timeline-date">Oct 2025 – Sep 2026</span>
-                </div>
-                <div class="timeline-sub">Tata Institute of Fundamental Research (TIFR), Hyderabad</div>
+            <div class="section-header">
+                <div class="section-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h2>Academic Journey</h2>
             </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <span class="timeline-title">Ph.D. in Physics</span>
-                    <span class="timeline-date">2020 – 2026</span>
+            <div class="timeline-box">
+                <div class="timeline-entry">
+                    <div class="timeline-title-row">
+                        <span class="timeline-role">Postdoctoral Fellow / Research Associate</span>
+                        <span class="timeline-period">Oct 2025 – Sep 2026</span>
+                    </div>
+                    <div class="timeline-place">Tata Institute of Fundamental Research (TIFR), Hyderabad</div>
                 </div>
-                <div class="timeline-sub">Tata Institute of Fundamental Research (TIFR), Hyderabad / Mumbai</div>
-                <div class="timeline-sub"><em>Thesis:</em> Characteristics of glassy dynamics and how active self-propelled forces affect them (Advisor: Prof. Saroj Kumar Nandi)</div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <span class="timeline-title">M.Sc. in Physics</span>
-                    <span class="timeline-date">2018 – 2020</span>
+                <div class="timeline-entry">
+                    <div class="timeline-title-row">
+                        <span class="timeline-role">Ph.D. in Physics</span>
+                        <span class="timeline-period">2020 – 2026</span>
+                    </div>
+                    <div class="timeline-place">Tata Institute of Fundamental Research (TIFR), Hyderabad / Mumbai</div>
                 </div>
-                <div class="timeline-sub">Indian Institute of Technology Delhi (IIT-D) | CGPA: 9.507 / 10</div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-header">
-                    <span class="timeline-title">B.Sc. (Hons) Physics</span>
-                    <span class="timeline-date">2015 – 2018</span>
+                <div class="timeline-entry">
+                    <div class="timeline-title-row">
+                        <span class="timeline-role">M.Sc. in Physics</span>
+                        <span class="timeline-period">2018 – 2020</span>
+                    </div>
+                    <div class="timeline-place">Indian Institute of Technology Delhi (IIT-D) • CGPA 9.507 / 10</div>
                 </div>
-                <div class="timeline-sub">University of Delhi | CGPA: 9.203 / 10</div>
+                <div class="timeline-entry">
+                    <div class="timeline-title-row">
+                        <span class="timeline-role">B.Sc. (Hons) in Physics</span>
+                        <span class="timeline-period">2015 – 2018</span>
+                    </div>
+                    <div class="timeline-place">University of Delhi • CGPA 9.203 / 10</div>
+                </div>
             </div>
         </section>
 
-        <!-- Computational Skills -->
+        <!-- Computational Toolbox -->
         <section>
-            <h2>Technical & Computational Skills</h2>
-            <ul class="skills-list">
-                <li><strong class="skill-category">Programming:</strong> Python, C, C++</li>
-                <li><strong class="skill-category">Scientific Software:</strong> LAMMPS, OVITO, Mathematica, GNUplot, LaTeX</li>
-                <li><strong class="skill-category">Environments:</strong> Linux, Windows</li>
-            </ul>
+            <div class="section-header">
+                <div class="section-icon"><i class="fa-solid fa-code"></i></div>
+                <h2>Technical & Computational Toolbox</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Languages</h4>
+                    <div class="skill-chips">
+                        <span>Python</span>
+                        <span>C</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Simulations & Tools</h4>
+                    <div class="skill-chips">
+                        <span>LAMMPS</span>
+                        <span>OVITO</span>
+                        <span>Mathematica</span>
+                        <span>LaTeX</span>
+                        <span>GNUplot</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Environments</h4>
+                    <div class="skill-chips">
+                        <span>Linux</span>
+                        <span>Windows</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <footer>
-            <p>© Puneet Pareek · Hosted on GitHub Pages</p>
+            <p>© Puneet Pareek · Hosted freely on GitHub Pages</p>
         </footer>
+
     </div>
 
 </body>
