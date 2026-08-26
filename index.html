@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Puneet Pareek | Physicist & Researcher</title>
+    <title>Puneet Pareek | Homepage</title>
     <!-- Google Fonts & Font Awesome Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -354,6 +354,77 @@
             color: var(--text-secondary);
         }
 
+        /* Grid Lists for Awards & Achievements */
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .achievement-card {
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .achievement-rank {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--brand-accent);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .achievement-exam {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--text-main);
+            margin: 0.2rem 0;
+        }
+
+        .achievement-year {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .award-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 0.85rem 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .award-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .award-item:first-child {
+            padding-top: 0;
+        }
+
+        .award-year {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--brand-accent);
+            background: #eff6ff;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+
+        .award-text {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .award-text strong {
+            color: var(--text-main);
+        }
+
         /* Skills Pill Layout */
         .skills-grid {
             display: grid;
@@ -545,6 +616,64 @@
                     <a href="https://arxiv.org/abs/2410.15928" target="_blank">Active Inhomogeneous Mode-Coupling Theory (aIMCT) for Dense Systems of Self-Propelled Particles</a>
                 </div>
                 <div class="pub-authors">Soumitra Kolya, Puneet Pareek, Saroj Kumar Nandi</div>
+            </div>
+        </section>
+
+        <!-- Achievements / National Ranks -->
+        <section>
+            <div class="section-header">
+                <div class="section-icon"><i class="fa-solid fa-trophy"></i></div>
+                <h2>National Examinations & Achievements</h2>
+            </div>
+            <div class="achievement-grid">
+                <div class="achievement-card">
+                    <div class="achievement-rank">AIR 7</div>
+                    <div class="achievement-exam">GATE Physics</div>
+                    <div class="achievement-year">2020</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-rank">AIR 59</div>
+                    <div class="achievement-exam">JEST Physics</div>
+                    <div class="achievement-year">2020</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-rank">AIR 76</div>
+                    <div class="achievement-exam">CSIR JRF Physics</div>
+                    <div class="achievement-year">2020</div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-rank">AIR 106</div>
+                    <div class="achievement-exam">IIT-JAM Physics</div>
+                    <div class="achievement-year">2018</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards & Scholarships -->
+        <section>
+            <div class="section-header">
+                <div class="section-icon"><i class="fa-solid fa-award"></i></div>
+                <h2>Awards & Scholarships</h2>
+            </div>
+            <div>
+                <div class="award-item">
+                    <span class="award-year">2023</span>
+                    <div class="award-text">
+                        <strong>Best Poster Award</strong> — Awarded at the conference <em>Frontiers in Active and Soft Matter</em> (TIFR Hyderabad).
+                    </div>
+                </div>
+                <div class="award-item">
+                    <span class="award-year">2019 – 2020</span>
+                    <div class="award-text">
+                        <strong>Prof. Vidya Bhushan Scholarship & MCM Award</strong> — Indian Institute of Technology, Delhi (IIT-D).
+                    </div>
+                </div>
+                <div class="award-item">
+                    <span class="award-year">2017 – 2018</span>
+                    <div class="award-text">
+                        <strong>Science Meritorious Award</strong> — University of Delhi.
+                    </div>
+                </div>
             </div>
         </section>
 
