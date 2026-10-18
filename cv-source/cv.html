@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--
+  Source for cv.pdf. To rebuild after editing, print this page to A4 PDF
+  (e.g. Chrome: Print > Save as PDF, margins "Default", background graphics on),
+  or headlessly:  chromium --headless --print-to-pdf=../cv.pdf --no-pdf-header-footer cv.html
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Puneet Pareek – Curriculum Vitae</title>
+<style>
+    @page { size: A4; margin: 16mm 17mm 16mm 17mm; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+        font-family: 'Liberation Serif', 'Times New Roman', Times, serif;
+        font-size: 11pt;
+        line-height: 1.35;
+        color: #111;
+    }
+    a { color: #1e3a8a; text-decoration: none; }
+    header {
+        text-align: center;
+        padding-bottom: 8pt;
+        border-bottom: 1.5pt solid #1e3a8a;
+        margin-bottom: 10pt;
+    }
+    .cv-label { font-size: 9.5pt; letter-spacing: 0.25em; text-transform: uppercase; color: #555; }
+    h1 { font-size: 22pt; letter-spacing: 0.06em; margin: 2pt 0 4pt; color: #1e3a8a; }
+    .contact { font-size: 10.5pt; }
+    .contact span + span::before { content: "  |  "; color: #999; white-space: pre; }
+    h2 {
+        font-size: 12.5pt;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #1e3a8a;
+        border-bottom: 0.6pt solid #9aa9c9;
+        padding-bottom: 1.5pt;
+        margin: 13pt 0 6pt;
+        break-after: avoid;
+    }
+    h3 { font-size: 11pt; margin: 8pt 0 3pt; font-style: italic; font-weight: normal; color: #333; break-after: avoid; }
+    .entry { margin-bottom: 7pt; break-inside: avoid; }
+    .entry-head { display: flex; justify-content: space-between; gap: 10pt; font-weight: bold; }
+    .entry-head .date { font-weight: normal; white-space: nowrap; }
+    .kv { display: grid; grid-template-columns: 82pt 1fr; column-gap: 6pt; }
+    .kv dt { color: #444; }
+    ul { padding-left: 14pt; }
+    li { margin-bottom: 4pt; break-inside: avoid; }
+    .interests { display: flex; flex-wrap: wrap; gap: 0 14pt; }
+    .interests span::before { content: "\2022\00a0"; color: #1e3a8a; }
+    p.justify, li.justify { text-align: justify; }
+    .me { font-weight: bold; }
+    .muted { color: #444; }
+    .ref { break-inside: avoid; }
+    .refs { display: grid; grid-template-columns: 1fr 1fr; gap: 8pt 18pt; }
+    .badge-current { font-weight: normal; font-size: 9pt; color: #fff; background: #1e3a8a; padding: 0 4pt; border-radius: 2pt; margin-left: 4pt; vertical-align: 1pt; }
+</style>
+</head>
+<body>
+
+<header>
+    <div class="cv-label">Curriculum Vitae</div>
+    <h1>PUNEET PAREEK</h1>
+    <div class="contact">
+        <span>Laboratoire Interdisciplinaire de Physique (LIPhy), Université Grenoble Alpes, France</span>
+    </div>
+    <div class="contact">
+        <span>Email: <a href="mailto:ppareek@tifrh.res.in">ppareek@tifrh.res.in</a></span>
+        <span>Web: <a href="https://pntpareek.github.io">pntpareek.github.io</a></span>
+    </div>
+</header>
+
+<h2>Research Interests</h2>
+<div class="interests">
+    <span>Glassy Dynamics</span>
+    <span>Disordered Systems</span>
+    <span>Active Matter</span>
+    <span>Non-equilibrium Statistical Mechanics</span>
+    <span>Biophysics</span>
+</div>
+
+<h2>Professional Experience</h2>
+<div class="entry">
+    <div class="entry-head"><span>Postdoctoral Researcher <span class="badge-current">Current</span></span><span class="date">Oct 2026 – Present</span></div>
+    <dl class="kv">
+        <dt>Institute:</dt><dd>Laboratoire Interdisciplinaire de Physique (LIPhy), Université Grenoble Alpes, Grenoble, France</dd>
+    </dl>
+</div>
+<div class="entry">
+    <div class="entry-head"><span>Postdoctoral Fellow</span><span class="date">Apr 2026 – Sep 2026</span></div>
+    <dl class="kv">
+        <dt>Institute:</dt><dd>Tata Institute of Fundamental Research (TIFR), Mumbai, India</dd>
+        <dt>Supervisor:</dt><dd>Prof. Saroj Kumar Nandi, TIFR Hyderabad, India</dd>
+    </dl>
+</div>
+<div class="entry">
+    <div class="entry-head"><span>Research Associate</span><span class="date">Oct 2025 – Apr 2026</span></div>
+    <dl class="kv">
+        <dt>Institute:</dt><dd>Tata Institute of Fundamental Research (TIFR), Mumbai, India</dd>
+        <dt>Supervisor:</dt><dd>Prof. Saroj Kumar Nandi, TIFR Hyderabad, India</dd>
+    </dl>
+</div>
+
+<h2>Education</h2>
+<div class="entry">
+    <div class="entry-head"><span>Ph.D. Physics</span><span class="date">2020 – 2026</span></div>
+    <dl class="kv">
+        <dt>University:</dt><dd>Tata Institute of Fundamental Research (TIFR), Mumbai, India</dd>
+        <dt>Thesis Title:</dt><dd><a href="http://hdl.handle.net/10603/735277">Characteristics of glassy dynamics and how active self-propelled forces affect them</a></dd>
+        <dt>Supervisor:</dt><dd>Prof. Saroj Kumar Nandi, TIFR Hyderabad, India</dd>
+    </dl>
+</div>
+<div class="entry">
+    <div class="entry-head"><span>M.Sc. Physics</span><span class="date">2018 – 2020</span></div>
+    <dl class="kv">
+        <dt>University:</dt><dd>Indian Institute of Technology Delhi (IIT-D), New Delhi, India</dd>
+        <dt>Project Title:</dt><dd>Shortcuts to adiabaticity with active particles</dd>
+        <dt>Supervisor:</dt><dd>Prof. Rahul Suresh Marathe, IIT-D, India</dd>
+        <dt>CGPA:</dt><dd>9.507 / 10.000</dd>
+    </dl>
+</div>
+<div class="entry">
+    <div class="entry-head"><span>B.Sc. (H) Physics</span><span class="date">2015 – 2018</span></div>
+    <dl class="kv">
+        <dt>University:</dt><dd>University of Delhi, Delhi, India</dd>
+        <dt>CGPA:</dt><dd>9.203 / 10.000</dd>
+    </dl>
+</div>
+
+<h2>Statement of Past Research</h2>
+<ul>
+    <li class="justify"><b>Various time scales in passive glassy dynamics:</b> We found that caging controls the mean,
+        whereas dynamical heterogeneity (DH) governs the distribution of particle displacements. In addition, we can
+        define several other time scales, such as when the mean-square displacement becomes diffusive, the distribution
+        of particle displacement becomes Gaussian, the overlap function becomes a power-law, the intermediate scattering
+        function becomes exponential, etc. We demonstrated using analytical calculations and simulation results that all
+        these different timescales are related to either caging or DH. This naturally explains the Fickian yet
+        non-Gaussian behaviour of glasses.</li>
+    <li class="justify"><b>Crossover in autocorrelation function from stretched exponential to power-law:</b> The overlap
+        function in passive glasses shows a crossover from stretched exponential (SE) at short times to a power law at
+        long times. To understand the mechanism behind such a crossover, we defined a simplified one-dimensional spin
+        model that belongs to the class of kinetically constrained models. The model has an onsite energy function and
+        a kinetic rule that a spin can flip only if the neighbouring spins have opposite signs. Thus, the dynamics
+        conserve energy, which comes from the movements of domain walls (DWs). We found that the crossover comes from a
+        change in the relevant excitations: from DWs at short times to bound pairs of DWs at long times.</li>
+    <li class="justify"><b>Influence of activity on relaxation dynamics and fragility in active glasses:</b> Active glasses
+        comprise self-propelled particles with a self-propulsion force <i>f</i><sub>0</sub> and persistence time
+        <i>&tau;</i><sub>p</sub> and provide a minimal model for biological systems. They often show nontrivial
+        behaviors, such as reentrant dynamics and tunable fragility. We studied a dense active system of soft repulsive
+        particles that shows these features. We characterised the critical surface separating liquid and glassy states
+        and showed that the nontrivial features are consequences of the morphology of this surface. In addition, with
+        increasing <i>&tau;</i><sub>p</sub>, the nature of the critical point changes from glass-like to jamming-like.
+        The tunable fragility, where the dynamics goes from sub-Arrhenius to super-Arrhenius, also appears in biological
+        tissues. We employed a dynamic scaling analysis and showed that this behavior in the current model is governed
+        by an &ldquo;active glass line&rdquo;.</li>
+</ul>
+
+<h2>List of Publications</h2>
+<h3>Published</h3>
+<ul>
+    <li><span class="me">Puneet Pareek</span>, Peter Sollich, Saroj Kumar Nandi, Ludovic Berthier, <a href="https://doi.org/10.1073/pnas.2516624123">Scaling the glassy dynamics of active particles: Tunable fragility and reentrance</a>, <i>Proc. Natl. Acad. Sci. U.S.A.</i> <b>123</b> (4) e2516624123 (2025).</li>
+    <li>Sukanta Mukherjee, <span class="me">Puneet Pareek</span>, Mustansir Barma, Saroj Kumar Nandi, <a href="https://doi.org/10.1088/1742-5468/ad1f55">Stretched exponential to power-law: crossover of relaxation in a kinetically constrained model</a>, <i>J. Stat. Mech.</i> (2024) 023205.</li>
+    <li><span class="me">Puneet Pareek</span>, Monoj Adhikari, Chandan Dasgupta, Saroj Kumar Nandi, <a href="https://doi.org/10.1063/5.0166404">Different glassy characteristics are related to either caging or dynamical heterogeneity</a>, <i>J. Chem. Phys.</i> <b>159</b>, 174503 (2023).</li>
+</ul>
+<h3>Under Review</h3>
+<ul>
+    <li>Soumitra Kolya, <span class="me">Puneet Pareek</span>, Saroj Kumar Nandi, <a href="https://arxiv.org/abs/2410.15928">Active Inhomogeneous Mode-Coupling Theory (aIMCT) for Dense Systems of Self-Propelled Particles</a>, arXiv:2410.15928 (2024).</li>
+</ul>
+<h3>Under Preparation</h3>
+<ul>
+    <li><span class="me">Puneet Pareek</span>, Saroj Kumar Nandi, Non-trivial effect of fraction of active particles on glassy dynamics.</li>
+</ul>
+<h3>Thesis</h3>
+<ul>
+    <li><span class="me">Puneet Pareek</span>, <a href="http://hdl.handle.net/10603/735277">Characteristics of glassy dynamics and how active self-propelled forces affect them</a>, Ph.D. Thesis, Tata Institute of Fundamental Research (2026).</li>
+</ul>
+
+<h2>Conferences Attended</h2>
+<ul>
+    <li><b>The Discussion Meeting on Glassy, Disordered and Non-equilibrium Soft Matter</b>, 10–11 April 2025<br>
+        <span class="muted">Raman Research Institute, Bangalore, India</span><br>
+        Poster title: <i>Scaling the glassy dynamics of active particles: Tunable fragility and reentrance.</i></li>
+    <li><b>Physics of Life: Active and Living Matter</b>, 8–10 February 2024<br>
+        <span class="muted">Institute of Physics, Bhubaneswar, India</span><br>
+        Poster title: <i>Re-entrance of Relaxation Dynamics in Dense Assemblies of Active Particles.</i></li>
+    <li><b>Frontiers in Active and Soft Matter 2023</b>, 10–11 February 2023<br>
+        <span class="muted">Tata Institute of Fundamental Research Hyderabad, India</span><br>
+        Poster title: <i>Can Glasses be Fickian yet non-Gaussian?</i> (Best Poster Award)</li>
+    <li><b>In-house Symposium</b>, 15–17 October 2022<br>
+        <span class="muted">Tata Institute of Fundamental Research Hyderabad, India</span><br>
+        Poster title: <i>Stretched Exponential to Power Law in Glassy Systems.</i></li>
+</ul>
+
+<h2>Awards and Scholarships</h2>
+<ul>
+    <li>2023: Best Poster Award in the conference &ldquo;Frontiers in Active and Soft Matter&rdquo; (2023).</li>
+    <li>2019–20: Merit-cum-Means and Prof. Vidya Bhushan Scholarship at Indian Institute of Technology Delhi.</li>
+    <li>2017–18: Science Meritorious Award at University of Delhi.</li>
+</ul>
+
+<h2>Achievements</h2>
+<ul>
+    <li>2020: Graduate Aptitude Test in Engineering (GATE) Physics with All India Rank 7</li>
+    <li>2020: Joint Entrance Screening Test (JEST) with All India Rank 59</li>
+    <li>2020: CSIR Junior Research Fellowship (JRF) Physics with All India Rank 76</li>
+    <li>2018: Joint Admission Test for M.Sc. (JAM) Physics with All India Rank 106</li>
+</ul>
+
+<h2>Software and Computational Skills</h2>
+<dl class="kv" style="grid-template-columns: 120pt 1fr;">
+    <dt>Programming:</dt><dd>Python, C, C++</dd>
+    <dt>Software:</dt><dd>LAMMPS, OVITO, Mathematica, LaTeX, GNUplot</dd>
+    <dt>Operating systems:</dt><dd>Linux, Microsoft Windows</dd>
+</dl>
+
+<h2>Referees</h2>
+<div class="refs">
+    <div class="ref">
+        <b>Dr. Saroj Kumar Nandi</b><br>
+        Reader-F<br>
+        Tata Institute of Fundamental Research Hyderabad, India<br>
+        Email: <a href="mailto:saroj@tifrh.res.in">saroj@tifrh.res.in</a>
+    </div>
+    <div class="ref">
+        <b>Prof. Chandan Dasgupta</b><br>
+        Honorary Professor, Indian Institute of Science, Bangalore, India<br>
+        ICTS Endowed Visiting Professor, International Centre for Theoretical Sciences, Bangalore, India<br>
+        Email: <a href="mailto:cdgupta@iisc.ac.in">cdgupta@iisc.ac.in</a>
+    </div>
+    <div class="ref">
+        <b>Prof. Mustansir Barma</b><br>
+        Professor Emeritus<br>
+        Tata Institute of Fundamental Research Hyderabad, India<br>
+        Email: <a href="mailto:barma@tifrh.res.in">barma@tifrh.res.in</a>
+    </div>
+</div>
+
+</body>
+</html>
